@@ -54,10 +54,11 @@ module.exports = {
     ]
   },
   devServer: {
-    inline: true,
+    compress: true,
     port: 8008,
   },
   resolve: {
     modules: [path.resolve(__dirname, 'node_modules'), 'node_modules']
-  }
+  },
+  mode: "development"
 }
